@@ -27,4 +27,21 @@ content:
         label: Content
         type: rich-text
         required: true
+  - name: config
+    label: Jekyll config
+    type: file
+    path: _config.yml
+    fields:
+      - name: title
+        label: Website title
+        type: string
+      - name: description
+        label: Website description
+        type: string
+      - name: url
+        label: Website URL
+        type: string
+      - name: baseurl
+        label: Base URL (for GitHub Pages repo sites)
+        type: string
 
