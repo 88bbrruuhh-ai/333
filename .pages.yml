@@ -1,5 +1,5 @@
 media:
-  input: media
+  input: public/media
   output: /media
 
 content:
