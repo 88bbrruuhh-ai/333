@@ -1,11 +1,15 @@
-media: media
+media:
+  input: media
+  output: /media
+
 content:
   - name: posts
-    label: Posts
+    label: Blog Posts
     type: collection
-    path: '_posts'
+    path: _posts
+    filename: '{year}-{month}-{day}-{primary}.md'
     view:
-      fields: [ title, published, date ]
+      fields: [title, published, date]
     fields:
       - name: published
         label: Published
@@ -14,10 +18,13 @@ content:
       - name: date
         label: Date
         type: date
+        required: true
       - name: title
         label: Title
         type: string
+        required: true
       - name: body
-        label: Body
+        label: Content
         type: rich-text
+        required: true
 
